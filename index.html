@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Listen to Twenty Three — a music portfolio for tracks, artwork and the ideas around them.">
+  <title>listen to twenty three — home</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Listen to Twenty Three, home"><span class="brand-small">listen to</span><span class="brand-large">twenty three<span class="brand-dot">.</span></span></a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a class="nav-link is-current" href="index.html" aria-current="page">Home</a>
+        <a class="nav-link" href="music.html">Music & visuals</a>
+        <a class="nav-link" href="about.html">About</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false"><span class="theme-icon" aria-hidden="true">◐</span><span data-theme-label>Light mode</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> An independent music portfolio</p>
+        <h1>A little noise.<br><span>A lot of feeling.</span></h1>
+        <p class="hero-intro">A home for the tracks, visuals and small moments that make up the world of Twenty Three.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="music.html">Explore the archive <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://www.youtube.com/@twentythree" target="_blank" rel="noopener noreferrer">Visit YouTube <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta"><span class="pulse-dot" aria-hidden="true"></span><span>PRESS PLAY ON YOUR OWN TERMS</span><span class="meta-divider">/</span><span>EST. IN SOUND</span></div>
+      </div>
+
+      <div class="hero-art-column">
+        <div class="art-label"><span>THE SOUND / THE IMAGE</span><span>VOL. 023</span></div>
+        <div class="art-carousel" data-carousel aria-label="Featured artwork carousel">
+          <div class="carousel-stage">
+            <figure class="carousel-slide is-active" data-slide="0">
+              <img src="assets/cover-ig-model.svg" alt="Abstract black, lime and cream artwork for IG MODEL">
+              <figcaption><span class="cover-index">01 / 04</span><span class="cover-name">IG MODEL</span></figcaption>
+            </figure>
+            <figure class="carousel-slide" data-slide="1" hidden>
+              <img src="assets/cover-queen-st.svg" alt="Warm street-inspired artwork for Queen St">
+              <figcaption><span class="cover-index">02 / 04</span><span class="cover-name">QUEEN ST</span></figcaption>
+            </figure>
+            <figure class="carousel-slide" data-slide="2" hidden>
+              <img src="assets/cover-the-highest.svg" alt="Deep blue and orange artwork for The Highest featuring Stopthis">
+              <figcaption><span class="cover-index">03 / 04</span><span class="cover-name">THE HIGHEST FT. STOPTHIS</span></figcaption>
+            </figure>
+            <figure class="carousel-slide" data-slide="3" hidden>
+              <img src="assets/cover-visual-archive.svg" alt="Abstract visual identity artwork with a circular sound motif">
+              <figcaption><span class="cover-index">04 / 04</span><span class="cover-name">VISUAL ARCHIVE</span></figcaption>
+            </figure>
+          </div>
+          <div class="carousel-controls">
+            <span class="carousel-hint">ARTWORK ROTATION — MANUAL</span>
+            <div class="carousel-buttons">
+              <button class="icon-button" type="button" data-carousel-prev aria-label="Previous artwork">←</button>
+              <button class="icon-button" type="button" data-carousel-next aria-label="Next artwork">→</button>
+            </div>
+          </div>
+          <div class="carousel-dots" aria-label="Choose artwork">
+            <button type="button" data-carousel-to="0" aria-label="Show artwork 1: IG MODEL" aria-pressed="true"></button>
+            <button type="button" data-carousel-to="1" aria-label="Show artwork 2: Queen St" aria-pressed="false"></button>
+            <button type="button" data-carousel-to="2" aria-label="Show artwork 3: The Highest" aria-pressed="false"></button>
+            <button type="button" data-carousel-to="3" aria-label="Show artwork 4: Visual Archive" aria-pressed="false"></button>
+          </div>
+          <p class="sr-only" data-carousel-status aria-live="polite">Artwork 1 of 4: IG MODEL.</p>
+        </div>
+        <div class="art-caption-row"><span>SCROLL THROUGH THE SOUND</span><span class="caption-star" aria-hidden="true">✳</span><span>NO AUTO-PLAY. JUST YOU.</span></div>
+      </div>
+    </section>
+
+    <section class="intro-strip" aria-label="Portfolio overview">
+      <div class="strip-item"><span class="strip-number">01</span><div><strong>Tracks</strong><span>Music worth revisiting</span></div></div>
+      <div class="strip-item"><span class="strip-number">02</span><div><strong>Visuals</strong><span>Artwork with a point of view</span></div></div>
+      <div class="strip-item"><span class="strip-number">03</span><div><strong>Process</strong><span>The thinking behind the sound</span></div></div>
+    </section>
+
+    <section class="section-shell featured-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Start here / 03 tracks</p><h2>On the <em>playlist.</em></h2></div>
+        <a class="text-link" href="music.html">See all visuals <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="track-grid">
+        <article class="track-card">
+          <a class="track-art" href="music.html#ig-model" aria-label="Explore IG MODEL"><img src="assets/cover-ig-model.svg" alt="IG MODEL cover artwork"><span class="art-arrow" aria-hidden="true">↗</span></a>
+          <div class="track-info"><span class="track-number">TRACK 01</span><h3>IG MODEL</h3><p>Sharp edges, bold energy, and a late-night frame of mind.</p></div>
+        </article>
+        <article class="track-card">
+          <a class="track-art" href="music.html#queen-st" aria-label="Explore Queen St"><img src="assets/cover-queen-st.svg" alt="Queen St cover artwork"><span class="art-arrow" aria-hidden="true">↗</span></a>
+          <div class="track-info"><span class="track-number">TRACK 02</span><h3>Queen St</h3><p>A city-lit snapshot with room for your own story.</p></div>
+        </article>
+        <article class="track-card">
+          <a class="track-art" href="music.html#the-highest" aria-label="Explore The Highest featuring Stopthis"><img src="assets/cover-the-highest.svg" alt="The Highest featuring Stopthis cover artwork"><span class="art-arrow" aria-hidden="true">↗</span></a>
+          <div class="track-info"><span class="track-number">TRACK 03</span><h3>The Highest <small>ft. Stopthis</small></h3><p>A forward-looking collaboration made to feel expansive.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing-band">
+      <div class="section-shell closing-inner"><p class="eyebrow">Keep the volume yours</p><h2>Good music leaves<br>something <em>behind.</em></h2><a class="button button-light" href="about.html">Step inside the project <span aria-hidden="true">↗</span></a></div>
+      <span class="closing-mark" aria-hidden="true">23</span>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><a class="footer-brand" href="index.html">listen to twenty three<span>.</span></a><p>Made for the sound, shaped by the details.</p><p class="copyright">© <span data-year>2026</span> Twenty Three</p></div></footer>
+</body>
+</html>

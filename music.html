@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse the featured tracks and visual artwork in the Listen to Twenty Three music portfolio.">
+  <title>listen to twenty three — music & visuals</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Listen to Twenty Three, home"><span class="brand-small">listen to</span><span class="brand-large">twenty three<span class="brand-dot">.</span></span></a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link is-current" href="music.html" aria-current="page">Music & visuals</a>
+        <a class="nav-link" href="about.html">About</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false"><span class="theme-icon" aria-hidden="true">◐</span><span data-theme-label>Light mode</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero section-shell">
+      <p class="eyebrow"><span class="eyebrow-line"></span> The archive / 023</p>
+      <div class="page-hero-row"><h1>Music &<br><em>visuals.</em></h1><p>Three featured tracks, one visual language. Search the archive or filter by what you want to explore.</p></div>
+      <div class="page-index-line"><span>01 — TRACKS</span><span>02 — ARTWORK</span><span>03 — YOUR NEXT LISTEN</span></div>
+    </section>
+
+    <section class="section-shell archive-section" aria-labelledby="archive-heading">
+      <div class="archive-toolbar">
+        <div><p class="eyebrow">Browse the collection</p><h2 id="archive-heading">The <em>archive.</em></h2></div>
+        <div class="archive-tools">
+          <label class="search-label" for="track-search">Search the archive</label>
+          <div class="search-box"><span aria-hidden="true">⌕</span><input id="track-search" type="search" placeholder="Try a title…" autocomplete="off"><button type="button" data-clear-search aria-label="Clear search" hidden>×</button></div>
+          <div class="filter-row" role="group" aria-label="Filter archive items">
+            <button type="button" class="filter-button is-selected" data-filter="all" aria-pressed="true">All items</button>
+            <button type="button" class="filter-button" data-filter="track" aria-pressed="false">Tracks</button>
+            <button type="button" class="filter-button" data-filter="visual" aria-pressed="false">Visual study</button>
+          </div>
+        </div>
+      </div>
+      <p class="results-line" data-results-count aria-live="polite">Showing 4 items</p>
+
+      <div class="archive-grid" data-archive-grid>
+        <article class="archive-card" data-archive-card data-kind="track" id="ig-model">
+          <a class="archive-image" href="https://www.youtube.com/@twentythree" target="_blank" rel="noopener noreferrer" aria-label="Visit the Twenty Three YouTube channel for IG MODEL"><img src="assets/cover-ig-model.svg" alt="Geometric black, lime and cream artwork labelled IG MODEL"><span class="archive-image-label">TRACK / 01</span><span class="art-arrow" aria-hidden="true">↗</span></a>
+          <div class="archive-card-info"><div class="card-kicker"><span>01</span><span>FEATURED TRACK</span></div><h3>IG MODEL</h3><p>Confident, direct, and built around a strong visual attitude.</p><a class="inline-link" href="https://www.youtube.com/@twentythree" target="_blank" rel="noopener noreferrer">Open artist channel <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="archive-card" data-archive-card data-kind="track" id="queen-st">
+          <a class="archive-image" href="https://www.youtube.com/@twentythree" target="_blank" rel="noopener noreferrer" aria-label="Visit the Twenty Three YouTube channel for Queen St"><img src="assets/cover-queen-st.svg" alt="Warm orange and cream cover artwork labelled Queen St"><span class="archive-image-label">TRACK / 02</span><span class="art-arrow" aria-hidden="true">↗</span></a>
+          <div class="archive-card-info"><div class="card-kicker"><span>02</span><span>FEATURED TRACK</span></div><h3>Queen St</h3><p>A street-level mood: warm lights, movement, and memories in passing.</p><a class="inline-link" href="https://www.youtube.com/@twentythree" target="_blank" rel="noopener noreferrer">Open artist channel <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="archive-card" data-archive-card data-kind="track" id="the-highest">
+          <a class="archive-image" href="https://www.youtube.com/@twentythree" target="_blank" rel="noopener noreferrer" aria-label="Visit the Twenty Three YouTube channel for The Highest featuring Stopthis"><img src="assets/cover-the-highest.svg" alt="Deep blue and orange artwork labelled The Highest featuring Stopthis"><span class="archive-image-label">TRACK / 03</span><span class="art-arrow" aria-hidden="true">↗</span></a>
+          <div class="archive-card-info"><div class="card-kicker"><span>03</span><span>FEATURED COLLAB</span></div><h3>The Highest <small>ft. Stopthis</small></h3><p>A collaborative title framed by open space, contrast, and lift.</p><a class="inline-link" href="https://www.youtube.com/@twentythree" target="_blank" rel="noopener noreferrer">Open artist channel <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="archive-card" data-archive-card data-kind="visual" id="visual-study">
+          <div class="archive-image archive-image-static"><img src="assets/cover-visual-archive.svg" alt="Abstract circular sound-wave motif in acid green, black and cream"><span class="archive-image-label">VISUAL / 04</span></div>
+          <div class="archive-card-info"><div class="card-kicker"><span>04</span><span>ARTWORK STUDY</span></div><h3>Visual archive</h3><p>A standalone artwork study exploring rhythm, repetition, and the number 23.</p><span class="inline-note">Visual identity / not a track</span></div>
+        </article>
+      </div>
+      <div class="empty-state" data-empty-state hidden><span class="empty-symbol" aria-hidden="true">⌕</span><h3>No matches this time.</h3><p>Try another title or select “All items” to reset the archive.</p><button class="button button-primary" type="button" data-reset-archive>Reset archive</button></div>
+    </section>
+
+    <section class="quote-band"><div class="section-shell quote-inner"><span class="quote-mark" aria-hidden="true">“</span><p>Every track has a sound.<br><em>Every sound leaves a shape.</em></p><span class="quote-credit">LISTEN TO TWENTY THREE / NOTES ON THE PROCESS</span></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><a class="footer-brand" href="index.html">listen to twenty three<span>.</span></a><p>Made for the sound, shaped by the details.</p><p class="copyright">© <span data-year>2026</span> Twenty Three</p></div></footer>
+</body>
+</html>
